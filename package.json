@@ -1,0 +1,24 @@
+{
+  "name": "node-gpm-task-1",
+  "version": "1.0.0",
+  "description": "Repository for module 1 tasks of NodeJS GMP.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "task1": "nodemon task1",
+    "task2": "nodemon task2",
+    "task3": "nodemon task3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ged7935/node-gpm-task-1.git"
+  },
+  "author": "Grant Denmead",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ged7935/node-gpm-task-1/issues"
+  },
+  "homepage": "https://github.com/ged7935/node-gpm-task-1#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
