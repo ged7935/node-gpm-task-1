@@ -11,8 +11,8 @@ const jsonTransform = new Transform({
         const chunkJson = JSON.parse(chunk.toString());
         const newJson = {};
         for (const [k, v] of Object.entries(chunkJson)) {
-            if (k === "Amount") continue;
-            newJson[k.toLowerCase()] = k === "Price" ? +v : v;
+            if (k === 'Amount') continue;
+            newJson[k.toLowerCase()] = k === 'Price' ? +v : v;
         }
         this.push(JSON.stringify(newJson) + '\n');
         callback();

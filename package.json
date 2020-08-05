@@ -3,10 +3,15 @@
   "version": "1.0.0",
   "description": "Repository for module 1 tasks of NodeJS GMP.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "task1": "nodemon ./task1",
-    "task2": "nodemon ./task2",
-    "task3": "nodemon ./task3"
+    "task1": "nodemon task1.js",
+    "task2": "nodemon task2.js",
+    "task3": "nodemon --exec babel-node task3.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
   },
   "repository": {
     "type": "git",
@@ -19,6 +24,10 @@
   },
   "homepage": "https://github.com/ged7935/node-gpm-task-1#readme",
   "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.0",
     "nodemon": "^2.0.4"
   },
   "dependencies": {
